@@ -38,5 +38,4 @@ Views:
 Database:
 - id
 - title
-- tag
 - entry

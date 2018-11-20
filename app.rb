@@ -4,7 +4,13 @@ require './lib/diary.rb'
 class SecretDiary < Sinatra::Base
 
   get '/' do
-    'bookmarks'
+    'diary entry'
+    erb :index
+  end
+
+  get '/entries' do
+    @entries = Diary.all
+    erb :entries
   end
 
 
